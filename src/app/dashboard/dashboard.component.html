@@ -1,0 +1,11 @@
+<h3>Current Tests</h3>
+
+<div class="grid grid-pad">
+  <a *ngFor="let router of routers" class="col-1-4" routerLink="/detail/{{router.id}}">
+    <div class="module router">
+      <h4>{{router.name}}</h4>
+    </div>
+  </a>
+</div>
+
+<app-router-search></app-router-search>
