@@ -9,6 +9,8 @@ h2 {
   margin-top: 0;
   padding-top: 0;
 }
+
+
 nav a {
   padding: 5px 10px;
   text-decoration: none;
@@ -17,6 +19,7 @@ nav a {
   background-color: #eee;
   border-radius: 4px;
 }
+
 nav a:visited, a:link {
   color: #607d8b;
 }

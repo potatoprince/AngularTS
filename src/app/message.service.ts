@@ -11,6 +11,7 @@ export class MessageService {
   }
 
   clear() {
-    this.messages = [];
+    const emptyS = '';
+    this.messages = [emptyS];
   }
 }
