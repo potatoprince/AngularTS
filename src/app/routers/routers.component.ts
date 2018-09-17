@@ -30,7 +30,7 @@ getRouters(): void {
 
   add(name: string): void {
     name = name.trim();
-    if (!name) {return;}
+    if (!name) {return; }
 
     this.routerService.addRouter({ name } as Router)
     .subscribe(router => {
@@ -38,7 +38,7 @@ getRouters(): void {
     });
 }
 
-  delete(router: Router): void{
+  delete(router: Router): void {
     this.routers = this.routers.filter(r => r !== router);
     this.routerService.deleteRouter(router).subscribe();
   }
