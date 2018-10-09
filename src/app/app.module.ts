@@ -13,9 +13,6 @@ import { InMemoryDataService } from './in-memory-data.service';
 import { RouterSearchComponent } from './router-search/router-search.component';
 import { LoginComponent } from './login/login.component';
 import { HelpComponent } from './help/help.component';
-import { AngularFireModule} from 'angularfire2';
-import { AngularFireAuthModule } from 'angularfire2/auth';
-import { environment } from '../environments/environment.prod';
 
 @NgModule({
   declarations: [
@@ -33,11 +30,9 @@ import { environment } from '../environments/environment.prod';
     FormsModule,
     AppRoutingModule,
     HttpClientModule,
-    AngularFireModule.initializeApp(environment.firebase),
-    AngularFireAuthModule,
     HttpClientInMemoryWebApiModule.forRoot(InMemoryDataService, { dataEncapsulation: false})
   ],
   providers: [],
-  bootstrap: [LoginComponent]
+  bootstrap: [AppComponent]
 })
 export class AppModule { }
